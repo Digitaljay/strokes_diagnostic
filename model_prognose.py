@@ -2,7 +2,7 @@ import torch
 import pickle
 import numpy as np
 from pathlib import Path
-from torch.utils.data import Dataset, DataLoader
+from torch.utils.data import DataLoader
 import torch.nn as nn
 
 from Dataset import KTDataset
