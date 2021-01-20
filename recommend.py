@@ -106,17 +106,15 @@ class Case():
         self.recs.add("При отрицательной динамике – повторное КТ головного мозга, повторная консультация нейрохирурга.")
 
 
-case=Case(patology_index=2)
-op, rec, rec_if = case.operation, case.recs, case.recs_if_agree
-print(color.GREEN + "Показания об операции: " + color.END)
-print(op)
-print(color.GREEN + "\nРекомендации: " + color.END)
-for i in rec:
-    print(i)
-if rec_if:
-    print(color.GREEN + "\nПри согласии на хирургическое лечение:" + color.END)
-    for i in rec_if:
-        print(i)
-
-
+# case=Case(patology_index=2)
+# op, rec, rec_if = case.operation, case.recs, case.recs_if_agree
+# print(color.GREEN + "Показания об операции: " + color.END)
+# print(op)
+# print(color.GREEN + "\nРекомендации: " + color.END)
+# for i in rec:
+#     print(i)
+# if rec_if:
+#     print(color.GREEN + "\nПри согласии на хирургическое лечение:" + color.END)
+#     for i in rec_if:
+#         print(i)
 
