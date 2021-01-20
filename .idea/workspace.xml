@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2cc587c1-74b5-45ef-ab74-c68dfde4d00b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/recomendation_algo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dataset.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_prognose.py" beforeDir="false" afterPath="$PROJECT_DIR$/model_prognose.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recomendation_algo.py" beforeDir="false" afterPath="$PROJECT_DIR$/recomendation_algo.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,8 +27,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/recomendation_algo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+            <state relative-caret-position="468">
+              <caret line="100" column="23" lean-forward="true" selection-start-line="100" selection-start-column="23" selection-end-line="100" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -96,7 +91,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-3" />
     <option name="y" value="8" />
     <option name="width" value="850" />
@@ -142,7 +137,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.stuff">
+  <component name="RunManager" selected="Python.recomendation_algo">
     <configuration name="label_enc" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="strokes_diagnostic" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -185,6 +180,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="recomendation_algo" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="strokes_diagnostic" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/recomendation_algo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="stuff" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="strokes_diagnostic" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -208,6 +224,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.recomendation_algo" />
         <item itemvalue="Python.stuff" />
         <item itemvalue="Python.label_enc" />
         <item itemvalue="Python.model_prognose" />
@@ -218,14 +235,14 @@
     <configuration />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-3" y="8" width="850" height="1041" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.33990148" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3344017" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.13774973" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -291,8 +308,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/recomendation_algo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+        <state relative-caret-position="468">
+          <caret line="100" column="23" lean-forward="true" selection-start-line="100" selection-start-column="23" selection-end-line="100" selection-end-column="23" />
         </state>
       </provider>
     </entry>

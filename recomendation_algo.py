@@ -9,6 +9,7 @@ class Patology:
         self.ish= patology_index in [5, 6, 11]
         self.tumor = patology_index in [12]
         self.ish_hard=0
+        self.back_position=0
 
 
 def PatologyDecoder(patology_index):
@@ -29,15 +30,15 @@ def PatologyDecoder(patology_index):
     return d[patology_index]
 
 
-def recomendations(patology_index,              # [int]
-                   neurological_deficit,        # [1, 2, 3, 4]
-                   conscious_level,             # [15, 14, 12, 9, 7, 5, 3]
-                   time_passed,                 # [None/int]
-                   hematoma_volume,             # [None/int]
-                   is_injuty,                   # [True/False/None]
-                   has_stroke_symptoms,         # [True/False]
-                   chronic,                  # [[*]/None]
-                   temporary_contraindications):# [[*]/None]
+def recomendations(patology_index=0,              # [int]
+                   neurological_deficit=1,        # [1, 2, 3, 4]
+                   conscious_level=15,             # [15, 14, 12, 9, 7, 5, 3]
+                   time_passed=0,                 # [int]
+                   hematoma_volume=0,             # [int]
+                   is_injury=None,                   # [True/False/None]
+                   has_stroke_symptoms=True,         # [True/False]
+                   chronic=None,                  # [[*]/None]
+                   temporary_contraindications=None):# [[*]/None]
 
     recs=set()
     recs_if_agree=set()
@@ -54,7 +55,7 @@ def recomendations(patology_index,              # [int]
             if chronic==[] and temporary_contraindications==[]:
                 recs.add("Вероятность необходимости оперативного лечения высокая – решение вопроса об операции. При согласии на хирургическое лечение")
             elif (chronic == None or temporary_contraindications == None) and conscious_level > 8:
-                recs.add("Вероятность необходимости оперативного лечения высокая."
+                recs.add("Вероятность необходимости оперативного лечения высокая. "
                          "Необходимо выяснить информацию о противопоказаниях и хронических болезнях. В случае их отсутствия - решение вопроса об операции")
                 recs.add("При отказе от оперативного лечения – динамическое наблюдение, повторная консультация при стабилизации, положительной динамике соматического, неврологического статуса.")
             else:
@@ -73,8 +74,34 @@ def recomendations(patology_index,              # [int]
         recs.add("КТ-перфузия с целью оценки зоны олигемии/некроза/пенумбры")
         recs.add("Повторная консультация нейрохирурга. Решение вопроса о выполнении тромбинтимэктомии, ЭИКМА, ТЭ, КЭЭ, ТЛТ.")
         if time_passed==0:
-            recs.add("Цел")
+            recs.add("Целесообразность тромболизиса и тромбэкстракции зависит от времени с момента инсульта. ")
+        elif time_passed<3.5:
+            recs.add("Вероятность выполнения тромболизиса и тромбэкстракции высокая")
+        elif 3.5<=time_passed<=12:
+            recs.add("Вероятность выполнения тромболизиса низкая, есть вероятность решения вопроса в пользу тромбэкстракции")
+        else:
+            recs.add("Вероятность выполнения тромболизиса и тромбэкстракции низкая")
+        if patology.ish_hard and conscious_level<13:
+            recs.add("Высока вероятность необходимости выполнения декомпрессивной трепанации черепа. Решение вопроса об оперативном лечении.")
+    if patology.tumor:
+        recs.add("МРТ головного мозга с в/в контрастным усилением для исключения объемного процесса")
+        recs.add("Повторная консультация для решения вопроса об оперативном лечении.")
+        recs.add("Консультация онколога.")
+        recs.add("Онкопоиск: сбор онкоанамнеза, УЗИ брюшной полости КТ легких, УЗИ почек.")
+        if conscious_level==9:
+            recs.add("Решение вопроса о выполнении оперативного лечения в неотложном порядке до выполнения МРТ головного мозга.")
 
     recs.add("Динамическое наблюдение неврологического статуса")
     recs.add("При отрицательной динамике – повторное КТ головного мозга, повторная консультация нейрохирурга.")
 
+    return recs, recs_if_agree
+
+
+rec, rec_if = recomendations(patology_index=2)
+print("Рекомендации: ")
+for i in rec:
+    print(i)
+if rec_if:
+    print("\nПри согласии на хирургическое лечение:")
+    for i in rec_if:
+        print(i)
