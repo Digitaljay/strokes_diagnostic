@@ -29,6 +29,18 @@ def PatologyDecoder(patology_index):
         13:"эд_сд"}
     return d[patology_index]
 
+class color:
+   PURPLE = '\033[95m'
+   CYAN = '\033[96m'
+   DARKCYAN = '\033[36m'
+   BLUE = '\033[94m'
+   GREEN = '\033[92m'
+   YELLOW = '\033[93m'
+   RED = '\033[91m'
+   BOLD = '\033[1m'
+   UNDERLINE = '\033[4m'
+   END = '\033[0m'
+
 
 def recomendations(patology_index=0,              # [int]
                    neurological_deficit=1,        # [1, 2, 3, 4]
@@ -103,12 +115,12 @@ def recomendations(patology_index=0,              # [int]
 
 
 # op, rec, rec_if = recomendations(patology_index=2)
-# print("Показания об операции: ")
+# print(color.GREEN + "Показания об операции: " + color.END)
 # print(op)
-# print("\nРекомендации: ")
+# print(color.GREEN + "\nРекомендации: " + color.END)
 # for i in rec:
 #     print(i)
 # if rec_if:
-#     print("\nПри согласии на хирургическое лечение:")
+#     print(color.GREEN + "\nПри согласии на хирургическое лечение:" + color.END)
 #     for i in rec_if:
 #         print(i)
