@@ -57,3 +57,5 @@ class KTDataset(Dataset):
         image = image.crop((470, 0, 1449, 979))
         image = image.resize((RESCALE_SIZE, RESCALE_SIZE))
         return np.array(image)
+
+

@@ -7,6 +7,7 @@ import torch.nn as nn
 
 from Dataset import KTDataset
 from Net import SimpleCnn
+import pathlib
 
 num_classes=14
 base_model=SimpleCnn(num_classes)
@@ -26,10 +27,7 @@ def predict(model, test_loader):
     return probs
 
 def predict_picture(file_name):
-    TEST_DIR = Path('C:/Users/Digitaljay/Documents/GitHub/strokes_diagnostic')
-
-    test_files = list(TEST_DIR.rglob(file_name))
-
+    test_files=[str(pathlib.PurePosixPath("C:/Users/Digitaljay/Documents/GitHub/strokes_diagnostic/1.jpg"))]
     test_dataset = KTDataset(test_files, mode="test")
     test_loader = DataLoader(test_dataset, shuffle=False, batch_size=64)
     probs = predict(base_model, test_loader)
