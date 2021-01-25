@@ -1,6 +1,6 @@
 import torch.nn as nn
 
-class SimpleCnn(nn.Module):
+class SmallCnn(nn.Module):
     def __init__(self, n_classes):
         super().__init__()
         self.conv1 = nn.Sequential(
