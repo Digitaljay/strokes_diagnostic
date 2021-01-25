@@ -2,13 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2cc587c1-74b5-45ef-ab74-c68dfde4d00b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/weights/KT_ish_small_7.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weights/KT_sak_small_3.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weights/KT_sdg_1.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weights/KT_tumor_1.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weights/KT_vgk_6.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weights/KT_vmg_2.pth" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KT_base_v2_last.pth" beforeDir="false" afterPath="$PROJECT_DIR$/stuff/KT_base_v2_last.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KT_ish_2.pth" beforeDir="false" afterPath="$PROJECT_DIR$/stuff/KT_ish_2.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KT_ish_7.pth" beforeDir="false" afterPath="$PROJECT_DIR$/stuff/KT_ish_7.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KT_ish_small_1.pth" beforeDir="false" afterPath="$PROJECT_DIR$/stuff/KT_ish_small_1.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KT_ish_small_7.pth" beforeDir="false" afterPath="$PROJECT_DIR$/stuff/KT_ish_small_7.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KT_ish_very_small_1.pth" beforeDir="false" afterPath="$PROJECT_DIR$/stuff/KT_ish_very_small_1.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KT_sak_small_3.pth" beforeDir="false" afterPath="$PROJECT_DIR$/stuff/KT_sak_small_3.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KT_sdg_1.pth" beforeDir="false" afterPath="$PROJECT_DIR$/stuff/KT_sdg_1.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KT_tumor_1.pth" beforeDir="false" afterPath="$PROJECT_DIR$/stuff/KT_tumor_1.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KT_vgk_6.pth" beforeDir="false" afterPath="$PROJECT_DIR$/stuff/KT_vgk_6.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KT_vmg_2.pth" beforeDir="false" afterPath="$PROJECT_DIR$/stuff/KT_vmg_2.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/all_predicitions.py" beforeDir="false" afterPath="$PROJECT_DIR$/all_predicitions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/label_encoder_v2.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/stuff/label_encoder_v2.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/label_ish_encoder.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/stuff/label_ish_encoder.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/label_sak_encoder.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/stuff/label_sak_encoder.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/label_sdg_encoder.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/stuff/label_sdg_encoder.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/label_tumor_encoder.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/stuff/label_tumor_encoder.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/label_vmg_encoder.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/stuff/label_vmg_encoder.pkl" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,8 +43,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/all_predicitions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1508">
-              <caret line="52" column="12" selection-start-line="52" selection-start-column="12" selection-end-line="52" selection-end-column="12" />
+            <state relative-caret-position="235">
+              <caret line="128" lean-forward="true" selection-start-line="128" selection-end-line="128" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
               </folding>
@@ -112,8 +124,8 @@
         <option value="$PROJECT_DIR$/check_model_ish.py" />
         <option value="$PROJECT_DIR$/model_small.py" />
         <option value="$PROJECT_DIR$/check_model_sak.py" />
-        <option value="$PROJECT_DIR$/all_predicitions.py" />
         <option value="$PROJECT_DIR$/weights.py" />
+        <option value="$PROJECT_DIR$/all_predicitions.py" />
       </list>
     </option>
   </component>
@@ -136,11 +148,6 @@
               <item name="strokes_diagnostic" type="b2602c69:ProjectViewProjectNode" />
               <item name="strokes_diagnostic" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="strokes_diagnostic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="strokes_diagnostic" type="462c0819:PsiDirectoryNode" />
-              <item name="test_img" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -152,7 +159,11 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Digitaljay\Documents\GitHub\strokes_diagnostic\stuff" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Digitaljay\Documents\GitHub\strokes_diagnostic\encoders" />
       <recent name="C:\Users\Digitaljay\Documents\GitHub\strokes_diagnostic\weights" />
       <recent name="C:\Users\Digitaljay\Documents\GitHub\strokes_diagnostic" />
       <recent name="C:\Users\Digitaljay\Documents\GitHub\strokes_diagnostic\test_img" />
@@ -291,12 +302,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12961012" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12961012" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.03154574" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.45425868" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -521,8 +533,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/all_predicitions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1508">
-          <caret line="52" column="12" selection-start-line="52" selection-start-column="12" selection-end-line="52" selection-end-column="12" />
+        <state relative-caret-position="235">
+          <caret line="128" lean-forward="true" selection-start-line="128" selection-end-line="128" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
           </folding>

@@ -9,32 +9,32 @@ from model_small import SmallCnn
 import pathlib
 
 vmg_model=SimpleCnn(4)
-vmg_model.load_state_dict(torch.load("KT_vmg_2.pth", map_location=torch.device('cpu')))
+vmg_model.load_state_dict(torch.load("weights/KT_vmg_2.pth", map_location=torch.device('cpu')))
 vmg_encoder={0: "ВМГ консерва",
              1: "ВМГ отсутствует",
              2: "ВМГ операция",
              3: "ВМГ задняя яма"}
 
 vgk_model=SimpleCnn(2)
-vgk_model.load_state_dict(torch.load("KT_vgk_6.pth", map_location=torch.device('cpu')))
+vgk_model.load_state_dict(torch.load("weights/KT_vgk_6.pth", map_location=torch.device('cpu')))
 vgk_encoder={0: "ВЖК",
              1: "ВЖК отсутствует"}
 
 sak_model=SmallCnn(2)
-sak_model.load_state_dict(torch.load("KT_sak_small_3.pth", map_location=torch.device('cpu')))
-sak_encoder = pickle.load(open("label_sak_encoder.pkl", 'rb'))
+sak_model.load_state_dict(torch.load("weights/KT_sak_small_3.pth", map_location=torch.device('cpu')))
+sak_encoder = pickle.load(open("encoders/label_sak_encoder.pkl", 'rb'))
 
 ish_model=SmallCnn(2)
-ish_model.load_state_dict(torch.load("KT_ish_small_7.pth", map_location=torch.device('cpu')))
-ish_encoder = pickle.load(open("label_ish_encoder.pkl", 'rb'))
+ish_model.load_state_dict(torch.load("weights/KT_ish_small_7.pth", map_location=torch.device('cpu')))
+ish_encoder = pickle.load(open("encoders/label_ish_encoder.pkl", 'rb'))
 
 sdg_model=SimpleCnn(2)
-sdg_model.load_state_dict(torch.load('KT_sdg_1.pth', map_location=torch.device('cpu')))
-sdg_encoder=pickle.load(open("label_sdg_encoder.pkl", 'rb'))
+sdg_model.load_state_dict(torch.load('weights/KT_sdg_1.pth', map_location=torch.device('cpu')))
+sdg_encoder=pickle.load(open("encoders/label_sdg_encoder.pkl", 'rb'))
 
 tumor_model=SimpleCnn(2)
-tumor_model.load_state_dict(torch.load("KT_tumor_1.pth", map_location=torch.device('cpu')))
-tumor_encoder=pickle.load(open("label_tumor_encoder.pkl", 'rb'))
+tumor_model.load_state_dict(torch.load("weights/KT_tumor_1.pth", map_location=torch.device('cpu')))
+tumor_encoder=pickle.load(open("encoders/label_tumor_encoder.pkl", 'rb'))
 
 class Diagnose():
     def __init__(self, file_name):
