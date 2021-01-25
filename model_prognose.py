@@ -26,8 +26,8 @@ def predict(model, test_loader):
     probs = nn.functional.softmax(torch.cat(logits), dim=-1).numpy()
     return probs
 
-def predict_picture(file_name):
-    test_files=[str(pathlib.PurePosixPath("C:/Users/Digitaljay/Documents/GitHub/strokes_diagnostic/1.jpg"))]
+def predict_picture():
+    test_files=[str(pathlib.PurePosixPath("C:/Users/Digitaljay/Documents/GitHub/strokes_diagnostic/test_img/СД_12.jpg"))]
     test_dataset = KTDataset(test_files, mode="test")
     test_loader = DataLoader(test_dataset, shuffle=False, batch_size=64)
     probs = predict(base_model, test_loader)
@@ -36,4 +36,4 @@ def predict_picture(file_name):
     predicted_label = label_encoder.classes_[y_pred]
     return predicted_label, predicted_proba
 
-print(predict_picture("1.jpg"))
+print(predict_picture())
