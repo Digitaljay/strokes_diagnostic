@@ -9,20 +9,21 @@ from model_small import SmallCnn
 import pathlib
 
 vmg_model=SimpleCnn(4)
-vmg_model.load_state_dict(torch.load("weights/KT_vmg_2.pth", map_location=torch.device('cpu')))
-vmg_encoder={0: "ВМГ консерва",
-             1: "ВМГ отсутствует",
-             2: "ВМГ операция",
-             3: "ВМГ задняя яма"}
+vmg_model.load_state_dict(torch.load("weights/KT_vmg_4.pth", map_location=torch.device('cpu')))
+vmg_encoder={0: "ВМГ задняя яма",
+             1: "ВМГ консерва",
+             2: "ВМГ отсутствует",
+             3: "ВМГ операция"}
 
 vgk_model=SimpleCnn(2)
 vgk_model.load_state_dict(torch.load("weights/KT_vgk_6.pth", map_location=torch.device('cpu')))
 vgk_encoder={0: "ВЖК",
              1: "ВЖК отсутствует"}
 
-sak_model=SmallCnn(2)
-sak_model.load_state_dict(torch.load("weights/KT_sak_small_3.pth", map_location=torch.device('cpu')))
-sak_encoder = pickle.load(open("encoders/label_sak_encoder.pkl", 'rb'))
+sak_model=SmallCnn(1)
+sak_model.load_state_dict(torch.load("weights/KT_binary_sak_smalla_29.pth", map_location=torch.device('cpu')))
+sak_encoder = {0:"САК отсутствует",
+               1:"САК"}
 
 ish_model=SmallCnn(2)
 ish_model.load_state_dict(torch.load("weights/KT_ish_small_7.pth", map_location=torch.device('cpu')))
@@ -58,11 +59,10 @@ class Diagnose():
         self.vgk_label = vgk_encoder[self.vgk_pred]
         self.vgk=1-self.vgk_pred
 
-        probs = self.predict(sak_model, test_loader)
-        self.sak_proba = np.max(probs)*100
-        self.sak_pred = np.argmax(probs)
-        self.sak_label = sak_encoder.classes_[self.sak_pred]
-        self.sak=1 if self.sak_label=="САК" else 0
+        probs = self.predict_binary(sak_model, test_loader)
+        self.sak_proba=probs[0]
+        self.sak=1 if self.sak_proba>=0.5 else 0
+        self.sak_label = sak_encoder[self.sak]
 
         probs = self.predict(sdg_model, test_loader)
         self.sdg_proba = np.max(probs)*100
@@ -95,15 +95,18 @@ class Diagnose():
         probs = nn.functional.softmax(torch.cat(logits), dim=-1).numpy()
         return probs
 
+    def predict_binary(self, model, test_loader):
+        with torch.no_grad():
+            logits = []
+            for inputs in test_loader:
+                model.eval()
+                outputs = model(inputs).cpu()
+                logits.append(outputs)
+        probs = torch.sigmoid(torch.cat(logits)).numpy()
+        return probs
 
-d=Diagnose("C:/Users/Digitaljay/Documents/GitHub/strokes_diagnostic/final_tests/2.jpg")
 
-print(d.vmg_label)
-print(d.vgk_label)
-print(d.ish_label)
-print(d.sdg_label)
-print(d.sak_label)
-print(d.tumor_label)
+
 
 
 def adapter(case):
@@ -127,9 +130,6 @@ def adapter(case):
 
     return classes
 
-print(adapter(d))
-
-
 name_decoder={
     0: "Внутрижелудочновое кровоизлияние",
     1: "Внутримозговая гематома с вентрикулярным компонентом",
@@ -142,3 +142,29 @@ name_decoder={
     8: "Субарахноидальное кровоизлияние",
     9: "Внутримозговая гематома с субарахноидальным кровоизлиянием"
 }
+
+for i in range(1, 41):
+    d=Diagnose("C:/Users/Digitaljay/Documents/GitHub/strokes_diagnostic/final_tests/"+str(i)+".jpg")
+    if d.vmg:
+        print("Снимок", i)
+        print(d.vmg_label)
+        if d.vgk:
+            print(d.vgk_label)
+        if d.sak:
+            print(d.sak_label)
+        if d.tumor:
+            print(d.tumor_label)
+        if d.ish:
+            print(d.ish_label)
+        print()
+
+
+    # print(d.vmg_label)
+    # print(d.vgk_label)
+    # print(d.ish_label)
+    # # print(d.sdg_label)
+    # print(d.sak_label)
+    # print(d.tumor_label)
+    #
+    # print(adapter(d))
+
