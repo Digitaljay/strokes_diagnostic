@@ -1,20 +1,12 @@
 import torch
-import pickle
-import numpy as np
 from pathlib import Path
 from torch.utils.data import DataLoader
-import torch.nn as nn
-
 from Dataset import KTDataset
-from Net import SimpleCnn
-import pathlib
+from model_small import SmallCnn
 
-num_classes=2
-base_model=SimpleCnn(num_classes)
-base_model.load_state_dict(torch.load("weights/KT_vgk_6.pth", map_location=torch.device('cpu')))
-
-label_encoder={0: "ВЖК",
-               1: "ВЖК отсутствует"}
+num_classes=1
+base_model=SmallCnn(num_classes)
+base_model.load_state_dict(torch.load("weights/KT_binary_vgk_smalla_v2_last.pth", map_location=torch.device('cpu')))
 
 def predict(model, test_loader):
     with torch.no_grad():
@@ -24,9 +16,10 @@ def predict(model, test_loader):
             model.eval()
             outputs = model(inputs).cpu()
             logits.append(outputs)
-
-    probs = nn.functional.softmax(torch.cat(logits), dim=-1).numpy()
-    return probs
+    # print(logits)
+    probs = torch.sigmoid(torch.cat(logits)).numpy()
+    probs_pro = [1 if i>=0.5 else 0 for i in probs]
+    return probs, probs_pro
 
 def predict_picture():
     TEST_DIR = Path('test_img')
@@ -35,10 +28,11 @@ def predict_picture():
     for file in test_files:
         test_dataset = KTDataset([file], mode="test")
         test_loader = DataLoader(test_dataset, shuffle=False, batch_size=64)
-        probs = predict(base_model, test_loader)
-        predicted_proba = np.max(probs)*100
-        y_pred = np.argmax(probs)
-        predicted_label = label_encoder[y_pred]
-        print(file, y_pred, predicted_label, predicted_proba)
+        probs, probs_pro = predict(base_model, test_loader)
+        print(file, probs, probs_pro)
+        # predicted_proba = np.max(probs)*100
+        # y_pred = np.argmax(probs)
+        # predicted_label = label_encoder[y_pred]
+        # print(file, y_pred, predicted_label, predicted_proba)
 
 predict_picture()

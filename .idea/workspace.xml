@@ -2,25 +2,105 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2cc587c1-74b5-45ef-ab74-c68dfde4d00b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/binary_ish_check.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/binary_sak_check.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/binary_tumor_chack.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/binary_vgk_check.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/check_model_tumor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/encoders/label_vgk_encoder.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_tests/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_tests/10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_tests/11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_tests/12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_tests/13.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_tests/14.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_tests/15.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_tests/16.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_tests/17.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_tests/18.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_tests/19.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_tests/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_tests/20.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_tests/21.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_tests/22.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_tests/23.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_tests/24.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_tests/25.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_tests/26.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_tests/27.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_tests/28.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_tests/29.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_tests/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_tests/30.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_tests/31.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_tests/32.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_tests/33.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_tests/34.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_tests/35.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_tests/36.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_tests/37.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_tests/38.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_tests/39.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_tests/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_tests/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_tests/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_tests/7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_tests/8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_tests/9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_tests/ВЖК_тест.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_tests/ВЖК_тест_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_tests/ВМГ_10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_tests/ВМГ_107.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_tests/ВМГ_115 (2).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_tests/ВМГ_115.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_tests/ВМГ_13.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_tests/ВМГ_19.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_tests/ВМГ_САК_13.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_tests/ВМГ_САК_19 (2).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_tests/ВМГ_САК_19.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_tests/САК_0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_tests/САК_109.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_tests/САК_173.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_tests/САК_19 (2).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_tests/ишемия_тест_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_tests/ишемия_тест_4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_tests/ишемия_тест_5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_tests/опухоль_тест_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_img/ВЖК_тест.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_img/ВЖК_тест_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_img/ВМГ_задняя.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_img/ишемия_тест.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_img/ишемия_тест_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_img/ишемия_тест_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_img/ишемия_тест_3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_img/ишемия_тест_4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_img/ишемия_тест_5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_img/норма.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_img/норма_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_img/норма_3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_img/норма_4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_img/норма_5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_img/опухоль_тест.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_img/опухоль_тест_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_img/опухоль_тест_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_img/опухоль_тест_3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights/KT_binary_ish_smalla_1.pth" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights/KT_binary_ish_smalla_29.pth" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights/KT_binary_ish_smalla_5.pth" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights/KT_binary_ish_smalla_7.pth" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights/KT_binary_sak_smalla_1.pth" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights/KT_binary_sak_smalla_29.pth" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights/KT_binary_sak_smalla_7.pth" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights/KT_binary_tumor_smalla_20.pth" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights/KT_binary_vgk_smalla_10.pth" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights/KT_binary_vgk_smalla_5.pth" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights/KT_binary_vgk_smalla_v2_last.pth" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights/KT_binary_vgk_v2_last.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KT_base_v2_last.pth" beforeDir="false" afterPath="$PROJECT_DIR$/stuff/KT_base_v2_last.pth" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KT_ish_2.pth" beforeDir="false" afterPath="$PROJECT_DIR$/stuff/KT_ish_2.pth" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KT_ish_7.pth" beforeDir="false" afterPath="$PROJECT_DIR$/stuff/KT_ish_7.pth" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KT_ish_small_1.pth" beforeDir="false" afterPath="$PROJECT_DIR$/stuff/KT_ish_small_1.pth" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KT_ish_small_7.pth" beforeDir="false" afterPath="$PROJECT_DIR$/stuff/KT_ish_small_7.pth" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KT_ish_very_small_1.pth" beforeDir="false" afterPath="$PROJECT_DIR$/stuff/KT_ish_very_small_1.pth" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KT_sak_small_3.pth" beforeDir="false" afterPath="$PROJECT_DIR$/stuff/KT_sak_small_3.pth" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KT_sdg_1.pth" beforeDir="false" afterPath="$PROJECT_DIR$/stuff/KT_sdg_1.pth" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KT_tumor_1.pth" beforeDir="false" afterPath="$PROJECT_DIR$/stuff/KT_tumor_1.pth" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KT_vgk_6.pth" beforeDir="false" afterPath="$PROJECT_DIR$/stuff/KT_vgk_6.pth" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KT_vmg_2.pth" beforeDir="false" afterPath="$PROJECT_DIR$/stuff/KT_vmg_2.pth" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/all_predicitions.py" beforeDir="false" afterPath="$PROJECT_DIR$/all_predicitions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/label_encoder_v2.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/stuff/label_encoder_v2.pkl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/label_ish_encoder.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/stuff/label_ish_encoder.pkl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/label_sak_encoder.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/stuff/label_sak_encoder.pkl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/label_sdg_encoder.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/stuff/label_sdg_encoder.pkl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/label_tumor_encoder.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/stuff/label_tumor_encoder.pkl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/label_vmg_encoder.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/stuff/label_vmg_encoder.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/check_model_ish.py" beforeDir="false" afterPath="$PROJECT_DIR$/check_model_ish.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/check_model_vgk.py" beforeDir="false" afterPath="$PROJECT_DIR$/check_model_vgk.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/check_model_vmg.py" beforeDir="false" afterPath="$PROJECT_DIR$/check_model_vmg.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,20 +111,84 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test_img/ВМГ_19.jpg">
+        <entry file="file://$PROJECT_DIR$/binary_sak_check.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="222">
+              <caret line="13" selection-end-line="32" />
+              <folding>
+                <element signature="e#0#12#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/all_predicitions.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="311">
+              <caret line="63" column="60" selection-start-line="63" selection-start-column="28" selection-end-line="63" selection-end-column="60" />
+              <folding>
+                <element signature="e#0#12#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/binary_vgk_check.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="261">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
+              <folding>
+                <element signature="e#0#12#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/check_model_vgk.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="348">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
+              <folding>
+                <element signature="e#0#12#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/check_model_tumor.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="232">
+              <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test_img/ВМГ_22.jpg">
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test_img/ВМГ_13.jpg">
-          <provider selected="true" editor-type-id="images" />
+        <entry file="file://$PROJECT_DIR$/check_model_sak.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="174">
+              <caret line="15" selection-end-line="42" />
+              <folding>
+                <element signature="e#0#12#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/all_predicitions.py">
+        <entry file="file://$PROJECT_DIR$/check_model_vmg.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="128" lean-forward="true" selection-start-line="128" selection-end-line="128" />
+            <state relative-caret-position="231">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
               </folding>
@@ -53,40 +197,20 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test_img/ВЖК_САК_19.jpg">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test_img/ВЖК_САК_19 (2).jpg">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test_img/ВМГ_10.jpg">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test_img/ВЖК_ВМГ_1.jpg">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test_img/ВЖК_1.jpg">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/model_prognose.py">
+        <entry file="file://$PROJECT_DIR$/binary_tumor_chack.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="35" column="52" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="52" />
+            <state relative-caret-position="348">
+              <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test_img/опухоль_тест.jpg">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
     </leaf>
@@ -117,15 +241,22 @@
         <option value="$PROJECT_DIR$/check_model.py" />
         <option value="$PROJECT_DIR$/VMGNet.py" />
         <option value="$PROJECT_DIR$/VGKNet.py" />
-        <option value="$PROJECT_DIR$/check_model_vmg.py" />
-        <option value="$PROJECT_DIR$/check_model_vgk.py" />
         <option value="$PROJECT_DIR$/check_module_sdg.py" />
         <option value="$PROJECT_DIR$/very_small.py" />
-        <option value="$PROJECT_DIR$/check_model_ish.py" />
         <option value="$PROJECT_DIR$/model_small.py" />
         <option value="$PROJECT_DIR$/check_model_sak.py" />
         <option value="$PROJECT_DIR$/weights.py" />
         <option value="$PROJECT_DIR$/all_predicitions.py" />
+        <option value="$PROJECT_DIR$/BinaryCnn.py" />
+        <option value="$PROJECT_DIR$/test_img/ВЖК_тест.py" />
+        <option value="$PROJECT_DIR$/binary_vgk_check.py" />
+        <option value="$PROJECT_DIR$/check_model_ish.py" />
+        <option value="$PROJECT_DIR$/check_model_vgk.py" />
+        <option value="$PROJECT_DIR$/binary_sak_check.py" />
+        <option value="$PROJECT_DIR$/binary_ish_check.py" />
+        <option value="$PROJECT_DIR$/binary_tumor_chack.py" />
+        <option value="$PROJECT_DIR$/check_model_tumor.py" />
+        <option value="$PROJECT_DIR$/check_model_vmg.py" />
       </list>
     </option>
   </component>
@@ -148,6 +279,26 @@
               <item name="strokes_diagnostic" type="b2602c69:ProjectViewProjectNode" />
               <item name="strokes_diagnostic" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="strokes_diagnostic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="strokes_diagnostic" type="462c0819:PsiDirectoryNode" />
+              <item name="final_tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="strokes_diagnostic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="strokes_diagnostic" type="462c0819:PsiDirectoryNode" />
+              <item name="my_tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="strokes_diagnostic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="strokes_diagnostic" type="462c0819:PsiDirectoryNode" />
+              <item name="test_img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="strokes_diagnostic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="strokes_diagnostic" type="462c0819:PsiDirectoryNode" />
+              <item name="weights" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -159,14 +310,15 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Digitaljay\Documents\GitHub\strokes_diagnostic\final_tests" />
+      <recent name="C:\Users\Digitaljay\Documents\GitHub\strokes_diagnostic\test_img" />
+      <recent name="C:\Users\Digitaljay\Documents\GitHub\strokes_diagnostic\my_tests" />
+      <recent name="C:\Users\Digitaljay\Documents\GitHub\strokes_diagnostic\weights" />
+      <recent name="C:\Users\Digitaljay\Documents\GitHub\strokes_diagnostic\encoders" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Digitaljay\Documents\GitHub\strokes_diagnostic\stuff" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Digitaljay\Documents\GitHub\strokes_diagnostic\encoders" />
-      <recent name="C:\Users\Digitaljay\Documents\GitHub\strokes_diagnostic\weights" />
-      <recent name="C:\Users\Digitaljay\Documents\GitHub\strokes_diagnostic" />
-      <recent name="C:\Users\Digitaljay\Documents\GitHub\strokes_diagnostic\test_img" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -181,8 +333,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.all_predicitions">
-    <configuration name="all_predicitions" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.check_model_vmg">
+    <configuration name="binary_ish_check" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="strokes_diagnostic" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -194,7 +346,28 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/all_predicitions.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/binary_ish_check.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="binary_tumor_chack" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="strokes_diagnostic" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/binary_tumor_chack.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -224,7 +397,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="check_model_sak" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="check_model_tumor" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="strokes_diagnostic" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -236,7 +409,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/check_model_sak.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/check_model_tumor.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -245,7 +418,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="check_model_vgk" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="check_model_vmg" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="strokes_diagnostic" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -257,28 +430,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/check_model_vgk.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="check_module_sdg" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="strokes_diagnostic" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/check_module_sdg.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/check_model_vmg.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -289,11 +441,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.all_predicitions" />
+        <item itemvalue="Python.check_model_vmg" />
+        <item itemvalue="Python.check_model_tumor" />
+        <item itemvalue="Python.binary_tumor_chack" />
         <item itemvalue="Python.check_model_ish" />
-        <item itemvalue="Python.check_module_sdg" />
-        <item itemvalue="Python.check_model_sak" />
-        <item itemvalue="Python.check_model_vgk" />
+        <item itemvalue="Python.binary_ish_check" />
       </list>
     </recent_temporary>
   </component>
@@ -302,13 +454,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12961012" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12961012" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.45425868" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.52471083" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -323,29 +474,6 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/label_enc.py" />
-    <entry file="file://$PROJECT_DIR$/stuff.py" />
-    <entry file="file://$PROJECT_DIR$/recomendation_algo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/decoder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/recommend.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2842">
-          <caret line="98" column="33" selection-start-line="98" selection-start-column="33" selection-end-line="98" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
@@ -373,25 +501,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_img/ВМГ_22.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/test_img/ВМГ_22 (2).jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/test_img/ВМГ_22 (3).jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_img/ВМГ_107.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/test_img/ВМГ_САК_13.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/test_img/ВМГ_САК_1.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_img/САК_0.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/knn_locally.py">
@@ -405,9 +524,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test_img/САК_13.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_img/САК_19.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/VGKNet.py">
@@ -427,74 +543,85 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/very_small.py">
+    <entry file="file://$PROJECT_DIR$/weights.py" />
+    <entry file="file://$PROJECT_DIR$/model_small.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="21" selection-start-column="21" selection-end-column="21" />
+        <state relative-caret-position="377">
+          <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Net.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="21" />
+        <state relative-caret-position="203">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/check_model_vmg.py">
+    <entry file="file://$PROJECT_DIR$/model_prognose.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="16" column="33" lean-forward="true" selection-start-line="12" selection-end-line="16" selection-end-column="33" />
+        <state relative-caret-position="754">
+          <caret line="35" column="52" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="52" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/check_model_vgk.py">
+    <entry file="file://$PROJECT_DIR$/very_small.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="16" column="36" lean-forward="true" selection-start-line="15" selection-end-line="16" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="323">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/check_model_ish.py">
+    <entry file="file://$PROJECT_DIR$/test_img/ВЖК_САК_19 (2).jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_img/СД_107.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_img/норма.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_img/САК_0.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_img/норма_3.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BinaryCnn.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="14" column="64" lean-forward="true" selection-start-line="13" selection-end-line="14" selection-end-column="64" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="29">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/check_model_sak.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="15" lean-forward="true" selection-start-line="13" selection-end-line="15" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/test_img/ВМГ_10.jpg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/model_small.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="3" column="34" lean-forward="true" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/test_img/ВЖК_135 (3).jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_img/ВМГ_115.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_img/ВЖК_тест.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_img/ВМГ_107.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_img/ВМГ_115 (2).jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_img/ВЖК_1.jpg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/test_img/ВЖК_135.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/test_img/ВЖК_135 (2).jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_img/ВЖК_135 (3).jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/test_img/ВЖК_ВМГ_1.jpg">
@@ -503,38 +630,118 @@
     <entry file="file://$PROJECT_DIR$/test_img/ВЖК_САК_19.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_img/ВЖК_САК_19 (2).jpg">
+    <entry file="file://$PROJECT_DIR$/test_img/ВЖК_тест.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_img/ВМГ_10.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_img/ВЖК_1.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_img/ВМГ_19.jpg">
+    <entry file="file://$PROJECT_DIR$/test_img/ВЖК_тест_1.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/test_img/ВМГ_13.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/model_prognose.py">
+    <entry file="file://$PROJECT_DIR$/test_img/ВМГ_19.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_img/САК_19.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/binary_ish_check.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="35" column="52" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="52" />
+        <state relative-caret-position="232">
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/weights.py">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/check_model_ish.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/binary_sak_check.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="13" selection-end-line="32" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/binary_tumor_chack.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_img/опухоль_тест.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/check_model_sak.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="15" selection-end-line="42" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/check_model_vgk.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/binary_vgk_check.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/all_predicitions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="128" lean-forward="true" selection-start-line="128" selection-end-line="128" />
+        <state relative-caret-position="311">
+          <caret line="63" column="60" selection-start-line="63" selection-start-column="28" selection-end-line="63" selection-end-column="60" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/check_model_tumor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_img/ВМГ_22.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/check_model_vmg.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
           </folding>

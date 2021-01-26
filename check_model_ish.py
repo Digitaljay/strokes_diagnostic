@@ -6,13 +6,13 @@ from torch.utils.data import DataLoader
 import torch.nn as nn
 
 from Dataset import KTDataset
-from model_small import SimpleCnn
+from model_small import SmallCnn
 import pathlib
 
 num_classes=2
-base_model=SimpleCnn(num_classes)
-base_model.load_state_dict(torch.load("KT_ish_small_7.pth", map_location=torch.device('cpu')))
-label_encoder = pickle.load(open("label_ish_encoder.pkl", 'rb'))
+base_model=SmallCnn(num_classes)
+base_model.load_state_dict(torch.load("weights/KT_ish_small_7.pth", map_location=torch.device('cpu')))
+label_encoder = pickle.load(open("encoders/label_ish_encoder.pkl", 'rb'))
 
 def predict(model, test_loader):
     with torch.no_grad():

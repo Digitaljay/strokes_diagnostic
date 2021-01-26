@@ -11,10 +11,11 @@ import pathlib
 
 num_classes=4
 base_model=SimpleVMG(num_classes)
-base_model.load_state_dict(torch.load("KT_vmg_2.pth", map_location=torch.device('cpu')))
-label_encoder={0: "ВМГ консерва",
+base_model.load_state_dict(torch.load("weights/KT_vmg_2.pth", map_location=torch.device('cpu')))
+label_encoder={0: "ВМГ в задней ямке",
                1: "ВМГ отсутствует",
-               2: "ВМГ операция"}
+               2: "ВМГ операция",
+               3: "ВМГ консерва"}
 
 def predict(model, test_loader):
     with torch.no_grad():
