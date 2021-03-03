@@ -143,20 +143,20 @@ name_decoder={
     9: "Внутримозговая гематома с субарахноидальным кровоизлиянием"
 }
 
-for i in range(1, 41):
-    d=Diagnose("C:/Users/Digitaljay/Documents/GitHub/strokes_diagnostic/final_tests/"+str(i)+".jpg")
-    if d.vmg:
-        print("Снимок", i)
-        print(d.vmg_label)
-        if d.vgk:
-            print(d.vgk_label)
-        if d.sak:
-            print(d.sak_label)
-        if d.tumor:
-            print(d.tumor_label)
-        if d.ish:
-            print(d.ish_label)
-        print()
+# for i in range(1, 41):
+#     d=Diagnose("C:/Users/Digitaljay/Documents/GitHub/strokes_diagnostic/final_tests/"+str(i)+".jpg")
+#     if d.vmg:
+#         print("Снимок", i)
+#         print(d.vmg_label)
+#         if d.vgk:
+#             print(d.vgk_label)
+#         if d.sak:
+#             print(d.sak_label)
+#         if d.tumor:
+#             print(d.tumor_label)
+#         if d.ish:
+#             print(d.ish_label)
+#         print()
 
 
     # print(d.vmg_label)
@@ -168,3 +168,12 @@ for i in range(1, 41):
     #
     # print(adapter(d))
 
+d=Diagnose("C:/Users/Digitaljay/Documents/GitHub/strokes_diagnostic/test_img/калугина.jpg")
+print(d.vmg_label)
+print(d.vgk_label)
+print(d.ish_label)
+# print(d.sdg_label)
+print(d.sak_label)
+print(d.tumor_label)
+
+print(adapter(d))
